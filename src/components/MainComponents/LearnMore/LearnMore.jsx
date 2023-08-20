@@ -4,7 +4,7 @@ import './LearnMore.scss'
 
 const LearnMore = () => {
     return (
-        <div className="learn_more main_container">
+        <section className="learn_more main_container">
             <div className="picture_family">
                 <img src={family} alt="family" />
             </div>
@@ -23,7 +23,7 @@ const LearnMore = () => {
                     Дізнатися більше
                 </Button>
             </div>
-        </div>
+        </section>
     )
 }
 export default LearnMore
