@@ -95,7 +95,7 @@
     }
 }
 
-@media (max-width: 1439px) and (min-width: 768px) {
+@media (max-width: 1440px) and (min-width: 768px) {
     .game_section {
         margin-top: 120px;
         display: flex;
@@ -196,7 +196,7 @@
     }
 }
 
-@media (max-width: 767px) and (min-width: 375px) {
+@media (max-width: 768px) and (min-width: 375px) {
     .game_section {
         margin-top: 8px;
         display: flex;
@@ -278,9 +278,9 @@
         .start_game {
             margin-top: 16px;
             img {
-                width: 35%;
-                top: -9%;
-                left: 7%;
+                width: 24%;
+                top: 2%;
+                left: 10%;
                 position: absolute;
             }
             div {
