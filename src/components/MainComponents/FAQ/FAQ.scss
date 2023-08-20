@@ -1,0 +1,96 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .FAQ {
+        margin-top: 120px;
+    }
+    .faq_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .faq_list {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: space-between;
+            span {
+                &:first-child {
+                    @include fontSizeWeightHeightSpace(24px, 500, 29px, 0.04em);
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+    .FAQ {
+        margin-top: 60px;
+    }
+    .faq_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .faq_list {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: space-between;
+            span {
+                &:first-child {
+                    @include fontSizeWeightHeightSpace(24px, 500, 29px, 0.04em);
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+    .FAQ {
+        margin-top: 60px;
+    }
+    .faq_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .faq_list {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            span {
+                &:first-child {
+                    @include fontSizeWeightHeightSpace(24px, 500, 29px, 0.04em);
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
