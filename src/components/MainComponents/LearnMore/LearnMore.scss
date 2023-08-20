@@ -1,0 +1,134 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .learn_more {
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        gap: 56px;
+    }
+
+    .text_learn_more {
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            margin-top: 44px;
+            @include fontSizeWeightHeightSpace(32px, 600, 39px, 0em);
+        }
+        p {
+            margin-top: 24px;
+            color: $textColor;
+            @include fontSizeWeightHeightSpace(24px, 400, 36px, 0em);
+            span {
+                font-weight: 500;
+            }
+        }
+        button {
+            width: 318px;
+            height: 85px;
+            padding: 26px 54px;
+            border-radius: 50px;
+
+            @include fontSizeWeightHeightSpace(18px, 600, 33px, 0em);
+        }
+    }
+}
+
+/* Для екранів з шириною більше або рівно 768px */
+@media (max-width: 1440px) and (min-width: 768px) {
+    .learn_more {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .picture_family {
+        width: 50%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text_learn_more {
+        width: 50%;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            margin-top: 12px;
+            @include fontSizeWeightHeightSpace(21px, 600, 25px, 0em);
+        }
+        p {
+            width: 400px;
+            margin-top: 8px;
+            color: $textColor;
+            @include fontSizeWeightHeightSpace(16px, 400, 26px, 0em);
+            span {
+                font-weight: 500;
+            }
+        }
+        button {
+            width: 220px;
+            height: 45px;
+            padding: 12px;
+            border-radius: 50px;
+
+            @include fontSizeWeightHeightSpace(12px, 600, 1, 0em);
+        }
+    }
+}
+
+/* Для екранів з шириною більше або рівно 375px */
+@media (max-width: 768px) and (min-width: 375px) {
+    .learn_more {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .picture_family {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text_learn_more {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        h3 {
+            margin-top: 12px;
+            @include fontSizeWeightHeightSpace(21px, 600, 25px, 0em);
+        }
+        p {
+            margin-top: 8px;
+            color: $textColor;
+            @include fontSizeWeightHeightSpace(16px, 400, 26px, 0em);
+            span {
+                font-weight: 500;
+            }
+        }
+        button {
+            margin-top: 8px;
+            width: 220px;
+            height: 45px;
+            padding: 12px;
+            border-radius: 50px;
+
+            @include fontSizeWeightHeightSpace(12px, 600, 1, 0em);
+        }
+    }
+}

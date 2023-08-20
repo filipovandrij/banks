@@ -1,5 +1,3 @@
-import { Button } from '@mui/material'
-import './Header.scss'
 import Navigations from 'components/HeaderComponents/Navigations/Navigations'
 import Content from 'components/HeaderComponents/Content/Content'
 
