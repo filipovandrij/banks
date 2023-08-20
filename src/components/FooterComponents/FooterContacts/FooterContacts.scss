@@ -1,0 +1,57 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.footer_contacts {
+    background-color: #f3f4f5;
+    padding: 67px 0 44px 0;
+    .main_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        li {
+            margin-top: 32px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail_phone {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0;
+            h5 {
+                @include fontSizeWeightHeightSpace(14px, 400, 18px);
+            }
+            p {
+                color: $textColor;
+                @include fontSizeWeightHeightSpace(16px, 400, 32px, 0em);
+            }
+        }
+    }
+
+    .phone_contact {
+        margin-top: 10px;
+    }
+}
