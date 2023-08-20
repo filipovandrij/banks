@@ -14,7 +14,7 @@ const ParagraphForParents = () => {
             <div className="cards_container">
                 {cardsInfo.map(({ id, img, title, describe }) => (
                     <InfoCards
-                        id={id}
+                        key={id}
                         img={img}
                         title={title}
                         describe={describe}

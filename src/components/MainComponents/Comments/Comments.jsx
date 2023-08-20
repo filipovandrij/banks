@@ -7,7 +7,7 @@ const Comments = () => {
             <div className="main_container">
                 {comments.map(({ id, img, comment, name, rating }) => (
                     <Comment
-                        id={id}
+                        key={id}
                         img={img}
                         comment={comment}
                         name={name}

@@ -1,0 +1,181 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .footer_callback {
+        margin-top: 120px;
+        padding: 56px 0;
+        background-color: #edf8fe;
+        input,
+        textarea,
+        .MuiInputBase-formControl {
+            background-color: $white;
+            border-radius: 15px;
+        }
+
+        h4 {
+            @include fontSizeWeightHeightSpace(18px, 600, 24px);
+        }
+    }
+
+    .title_form {
+        text-align: center;
+        h3 {
+            margin-top: 56px;
+            @include fontSizeWeightHeightSpace(32px, 600, 39px, 0.04em);
+        }
+        p {
+            margin-top: 16px;
+
+            @include fontSizeWeightHeightSpace(24px, 400, 29px);
+            color: $textColor;
+        }
+    }
+
+    form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+            margin: 30px 0 8px 0;
+        }
+        .send_form {
+            margin-top: 42px;
+            align-self: flex-end;
+            text-align: right;
+            width: 201px;
+            height: 53px;
+        }
+    }
+
+    .name_mail_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 50px;
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+    .footer_callback {
+        margin-top: 20px;
+        padding: 26px 0;
+        background-color: #edf8fe;
+        input,
+        textarea,
+        .MuiInputBase-formControl {
+            background-color: $white;
+            border-radius: 15px;
+        }
+
+        h4 {
+            @include fontSizeWeightHeightSpace(14px, 600, 24px);
+        }
+    }
+
+    .title_form {
+        text-align: center;
+        h3 {
+            margin-top: 56px;
+            @include fontSizeWeightHeightSpace(32px, 600, 39px, 0.04em);
+        }
+        p {
+            margin-top: 16px;
+
+            @include fontSizeWeightHeightSpace(24px, 400, 29px);
+            color: $textColor;
+        }
+    }
+
+    form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+            margin: 14px 0 8px 0;
+        }
+        .send_form {
+            margin-top: 42px;
+            align-self: flex-end;
+            text-align: right;
+            width: 201px;
+            height: 53px;
+        }
+    }
+
+    .name_mail_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 50px;
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .footer_callback {
+        margin-top: 20px;
+        padding: 26px 0;
+        background-color: #edf8fe;
+        input,
+        textarea,
+        .MuiInputBase-formControl {
+            background-color: $white;
+            border-radius: 15px;
+        }
+
+        h4 {
+            text-align: center;
+            @include fontSizeWeightHeightSpace(14px, 600, 24px);
+        }
+    }
+
+    .title_form {
+        text-align: center;
+        h3 {
+            margin-top: 16px;
+            @include fontSizeWeightHeightSpace(22px, 600, 39px, 0.04em);
+        }
+        p {
+            margin-top: 16px;
+
+            @include fontSizeWeightHeightSpace(16px, 400, 29px);
+            color: $textColor;
+        }
+    }
+
+    form {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        h4 {
+            margin: 14px 0 8px 0;
+        }
+        .send_form {
+            margin-top: 42px;
+            align-self: center;
+            text-align: right;
+            width: 201px;
+            height: 53px;
+        }
+    }
+
+    .name_mail_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        gap: 8px;
+        div {
+            width: 100%;
+        }
+    }
+}

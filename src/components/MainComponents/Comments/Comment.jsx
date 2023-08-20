@@ -1,8 +1,8 @@
 import { Box, Rating } from '@mui/material'
 
-const Comment = ({ id, img, comment, name, rating }) => {
+const Comment = ({ img, comment, name, rating }) => {
     return (
-        <div className="comment" key={id}>
+        <div className="comment">
             <img src={img} alt={img} />
             <p>{comment}</p>
             <div className="name_block">
