@@ -1,0 +1,306 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .game_section {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        h3 {
+            color: #5c37f5;
+            @include fontSizeWeightHeightSpace(32px, 600, 48px, 0em);
+        }
+
+        p {
+            color: $textColor;
+            width: 336px;
+            @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+        }
+        button {
+            width: 166px;
+            height: 53px;
+            margin-top: 24px;
+            padding: 30px 60px 30px 60px;
+            border-radius: 50px;
+        }
+    }
+
+    .upper_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 36px;
+        h3 {
+            margin-top: 48px;
+            margin-left: 48px;
+        }
+    }
+
+    .green_block {
+        background: #bdf197;
+
+        border-radius: 50px 0 0 0;
+        width: 50%;
+        height: 370px;
+    }
+    .pink_block {
+        background: #ffc9e5;
+
+        width: 50%;
+        height: 370px;
+        border-radius: 0 50px 0 0;
+    }
+
+    .start_game {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+    }
+
+    .lower_block {
+        position: relative;
+        display: flex;
+        background: #fcedc1;
+        border-radius: 0 0 50px 50px;
+        height: 370px;
+        h3 {
+            margin-top: 69px;
+            margin-left: 80px;
+        }
+
+        .start_game {
+            margin-top: 16px;
+            img {
+                top: 16px;
+                left: 70px;
+                position: absolute;
+            }
+            div {
+                margin-left: 250px;
+            }
+        }
+
+        .positiv_girl {
+            position: absolute;
+            bottom: -22px;
+            right: 90px;
+        }
+        .positiv_boy {
+            position: absolute;
+            bottom: -22px;
+            right: 387px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+    .game_section {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h3 {
+            color: #5c37f5;
+            @include fontSizeWeightHeightSpace(22px, 600, 30px, 0em);
+        }
+
+        p {
+            z-index: 2;
+            position: relative;
+            color: $deepViolet;
+            @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+        }
+        button {
+            width: 80px;
+            height: 53px;
+            margin-top: 24px;
+            padding: 15px 30px;
+            border-radius: 50px;
+        }
+    }
+
+    .upper_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 36px;
+        h3 {
+            margin-top: 48px;
+            margin-left: 48px;
+        }
+        img {
+            width: 40%;
+        }
+    }
+
+    .green_block {
+        background: #bdf197;
+
+        border-radius: 50px 0 0 0;
+        width: 50%;
+        height: 370px;
+    }
+    .pink_block {
+        background: #ffc9e5;
+
+        width: 50%;
+        height: 370px;
+        border-radius: 0 50px 0 0;
+    }
+
+    .start_game {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+    }
+
+    .lower_block {
+        position: relative;
+        display: flex;
+        background: #fcedc1;
+        border-radius: 0 0 50px 50px;
+        height: 370px;
+        h3 {
+            margin-top: 69px;
+            margin-left: 80px;
+        }
+
+        .start_game {
+            margin-top: 16px;
+            img {
+                top: 16px;
+                left: 70px;
+                position: absolute;
+            }
+            div {
+                margin-left: 250px;
+            }
+        }
+
+        .positiv_girl {
+            width: 28%;
+            position: absolute;
+            bottom: -3%;
+            z-index: 0;
+            right: 2%;
+        }
+        .positiv_boy {
+            width: 19%;
+            position: absolute;
+            bottom: -3%;
+            right: 29%;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .game_section {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            color: #5c37f5;
+            @include fontSizeWeightHeightSpace(22px, 600, 30px, 0em);
+        }
+
+        p {
+            z-index: 2;
+            position: relative;
+            color: $deepViolet;
+            @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+        }
+        button {
+            width: 80px;
+            height: 53px;
+            margin-top: 24px;
+            padding: 15px 30px;
+            border-radius: 50px;
+        }
+    }
+
+    .upper_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            text-align: center;
+            margin-top: 18px;
+            margin-left: auto;
+        }
+        img {
+            width: 40%;
+        }
+    }
+
+    .green_block {
+        background: #bdf197;
+
+        border-radius: 50px 0 0 0;
+        width: 50%;
+        height: 370px;
+    }
+    .pink_block {
+        background: #ffc9e5;
+
+        width: 50%;
+        height: 370px;
+        border-radius: 0 50px 0 0;
+    }
+
+    .start_game {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        div {
+            text-align: center;
+        }
+        p {
+            margin: 0 4px;
+        }
+    }
+
+    .lower_block {
+        position: relative;
+        display: flex;
+        background: #fcedc1;
+        border-radius: 0 0 50px 50px;
+        height: 370px;
+        h3 {
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .start_game {
+            margin-top: 16px;
+            img {
+                width: 35%;
+                top: -9%;
+                left: 7%;
+                position: absolute;
+            }
+            div {
+                margin-left: 50%;
+            }
+        }
+
+        .positiv_girl {
+            width: 28%;
+            position: absolute;
+            bottom: -2%;
+            z-index: 0;
+            right: 42%;
+        }
+        .positiv_boy {
+            width: 19%;
+            position: absolute;
+            bottom: -2%;
+            right: 70%;
+            z-index: 1;
+        }
+    }
+}

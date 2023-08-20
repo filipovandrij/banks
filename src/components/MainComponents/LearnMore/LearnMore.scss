@@ -65,7 +65,6 @@
             @include fontSizeWeightHeightSpace(21px, 600, 25px, 0em);
         }
         p {
-            width: 400px;
             margin-top: 8px;
             color: $textColor;
             @include fontSizeWeightHeightSpace(16px, 400, 26px, 0em);
