@@ -1,40 +1,15 @@
 import { Button } from '@mui/material'
 import './Header.scss'
-import logo from 'img/logo.svg'
+import Navigations from 'components/HeaderComponents/Navigations/Navigations'
+import Content from 'components/HeaderComponents/Content/Content'
 
 const Header = () => {
     return (
         <header>
-            <div>
-                <img className="logo" src={logo} alt="banks" />
+            <div className="main_container">
+                <Navigations />
             </div>
-            <nav>
-                <ul className="menu">
-                    <li>
-                        <a href="#">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Особливості</a>
-                    </li>
-                    <li>
-                        <a href="#">Ігри</a>
-                    </li>
-                    <li>
-                        <a href="#">Батькам</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <div className="header_btns">
-                <Button variant="outlined" color="error">
-                    Увійти
-                </Button>
-                <Button className="try" variant="contained">
-                    Спробувати
-                </Button>
-            </div>
+            <Content />
         </header>
     )
 }

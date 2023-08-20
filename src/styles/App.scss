@@ -10,6 +10,36 @@ button {
     font-weight: 600;
 }
 
-.main_container {
-    margin: 0 72px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fixel', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Для екранів з шириною більше або рівно 1440px */
+@media (min-width: 1440px) {
+    .main_container {
+        margin: 0 72px;
+    }
+}
+
+/* Для екранів з шириною більше або рівно 768px */
+@media (max-width: 1440px) and (min-width: 768px) {
+    .main_container {
+        margin: 0 36px;
+    }
+}
+
+/* Для екранів з шириною більше або рівно 375px */
+@media (max-width: 768px) and (min-width: 375px) {
+    .main_container {
+        margin: 0 8px;
+    }
 }

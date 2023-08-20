@@ -1,0 +1,198 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .header_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        a {
+            font-family: 'Fixel', sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+            color: $textColor;
+            &:hover {
+                color: $black;
+
+                font-weight: 600;
+            }
+        }
+    }
+
+    .logo {
+        width: 132px;
+        height: 75px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 42px;
+        }
+    }
+
+    .header_btns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .try {
+        background-color: $deepViolet;
+        @include deepViletBtn();
+    }
+
+    .header_list_mobile {
+        display: none;
+    }
+    .menu_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+    .header_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        a {
+            font-family: 'Fixel', sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+            color: $textColor;
+            &:hover {
+                color: $black;
+
+                font-weight: 600;
+            }
+        }
+    }
+
+    .logo {
+        width: 120px;
+        height: 62px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .header_btns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .try {
+        background-color: $deepViolet;
+        @include deepViletBtn();
+    }
+    .header_list_mobile {
+        display: none;
+    }
+    .menu_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .header_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        a {
+            font-family: 'Fixel', sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+            color: $textColor;
+            &:hover {
+                color: $black;
+
+                font-weight: 600;
+            }
+        }
+    }
+
+    .logo {
+        width: 80px;
+        height: 48px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header_btns {
+        display: flex;
+        gap: 4px;
+        button {
+            font-size: 12px;
+        }
+    }
+
+    .try {
+        background-color: $deepViolet;
+        @include deepViletBtn();
+    }
+
+    .header_list_mobile {
+        position: relative;
+        display: block;
+        padding: 0px;
+    }
+    .menu_mobile {
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        left: -24px;
+        list-style: none;
+        background: $deepViolet;
+        border-radius: 15px;
+        padding: 0;
+        li {
+            text-align: center;
+            padding: 4px;
+            margin: 6px 6px;
+            &:hover {
+                border-radius: 10px;
+                background-color: $white;
+            }
+        }
+        a {
+            &:hover {
+                color: $deepViolet;
+                font-weight: 400;
+            }
+        }
+    }
+}

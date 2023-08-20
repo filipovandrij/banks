@@ -7,9 +7,7 @@ function App() {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <div className="main_container">
-                <Header />
-            </div>
+            <Header />
         </StyledEngineProvider>
     )
 }

@@ -8,3 +8,15 @@
         border: 1px solid $deepViolet;
     }
 }
+
+@mixin fontSizeWeightHeightSpace(
+    $size: 0,
+    $weight: 0,
+    $height: 0,
+    $spacing: 0
+) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
