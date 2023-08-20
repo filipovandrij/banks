@@ -1,0 +1,106 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+@media (min-width: 1440px) {
+    .comments_container {
+        background-color: #f3f4f5;
+        margin-top: 56px;
+
+        .main_container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .comment {
+            width: 360px;
+            p {
+                @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+                margin-top: 12px;
+
+                color: $textColor;
+            }
+
+            .name_block {
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    margin-top: 24px;
+                    @include fontSizeWeightHeightSpace(15px, 500, 27px, 0em);
+
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+    .comments_container {
+        background-color: #f3f4f5;
+        margin-top: 56px;
+
+        .main_container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+        }
+
+        .comment {
+            max-width: 200px;
+            p {
+                @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+                margin-top: 12px;
+
+                color: $textColor;
+            }
+
+            .name_block {
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    margin-top: 24px;
+                    @include fontSizeWeightHeightSpace(15px, 500, 27px, 0em);
+
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+    .comments_container {
+        background-color: #f3f4f5;
+        margin-top: 12px;
+
+        .main_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 40px 0;
+        }
+
+        .comment {
+            max-width: 200px;
+            p {
+                @include fontSizeWeightHeightSpace(16px, 400, 24px, 0em);
+                margin-top: 12px;
+
+                color: $textColor;
+            }
+
+            .name_block {
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    margin-top: 24px;
+                    @include fontSizeWeightHeightSpace(15px, 500, 27px, 0em);
+
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+        }
+    }
+}

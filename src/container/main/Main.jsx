@@ -1,3 +1,4 @@
+import Comments from 'components/MainComponents/Comments/Comments'
 import ForParents from 'components/MainComponents/ForParents/ForParents'
 import GamesSection from 'components/MainComponents/GamesSection/GamesSection'
 import LearnMore from 'components/MainComponents/LearnMore/LearnMore'
@@ -12,6 +13,7 @@ const Main = () => {
             <GamesSection />
             <ForParents />
             <ParagraphForParents />
+            <Comments />
         </main>
     )
 }
